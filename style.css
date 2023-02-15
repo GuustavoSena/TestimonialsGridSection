@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     background-color: #f1f2f6;
@@ -126,4 +126,21 @@ img {
 .card-1 .full-answer, .card-2 .full-answer, .card-3 .full-answer, .card-4 .full-answer, .card-5 .full-answer{
     opacity: 0.5;
     font-size: 0.9em;
+}
+
+@media screen and (max-width: 1300px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+   .grid-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
 }
